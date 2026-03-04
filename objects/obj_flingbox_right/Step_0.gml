@@ -4,6 +4,6 @@ if (instance_position(mouse_x, mouse_y, id) && mouse_check_button_pressed(mb_lef
 }
 
 if (place_meeting(x,y,obj_cat)){
-	obj_cat.movespeedH = 4;
+	obj_cat.movespeedH = obj_cat.mainspeed;
 	obj_cat.movespeedV = 0;
 }

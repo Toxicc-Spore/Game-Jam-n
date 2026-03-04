@@ -1,6 +1,6 @@
 with (global.dragid){
-	x = mouse_x;
-	y = mouse_y;
+	x = mouse_x-32;
+	y = mouse_y-32;
 	move_snap(64,64);
 }
 

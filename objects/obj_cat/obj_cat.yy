@@ -35,6 +35,9 @@
     "name":"spr_cat_right",
     "path":"sprites/spr_cat_right/spr_cat_right.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_cat_mask",
+    "path":"sprites/spr_cat_mask/spr_cat_mask.yy",
+  },
   "visible":true,
 }
