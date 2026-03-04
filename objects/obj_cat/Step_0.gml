@@ -1,0 +1,3 @@
+x += movespeedH;
+y += movespeedV;
+

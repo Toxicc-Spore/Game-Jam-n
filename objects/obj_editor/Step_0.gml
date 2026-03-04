@@ -1,0 +1,22 @@
+for (var i = 0; i < array_length(ObjectArray); i++)
+{
+	var xx = 300 + i * 150;
+	var yy = view_get_hport(view_camera[0]) - 40;
+
+	var left = xx - sprite_get_width(ObjectSpriteArray[i])/2;
+	var right = xx + sprite_get_width(ObjectSpriteArray[i])/2;
+	var top = yy - sprite_get_height(ObjectSpriteArray[i])/2;
+	var bottom = yy + sprite_get_height(ObjectSpriteArray[i])/2;
+
+	if (mouse_check_button_pressed(mb_left) && ObjectAmountArray[i] != 0 && mouse_x > left && mouse_x < right && mouse_y > top && mouse_y < bottom)
+	{
+		var object = instance_create(mouse_x, mouse_y, ObjectArray[i]);
+		global.dragid = object.id;
+		ObjectAmountArray[i] -= 1;
+		instance_create(x,y,obj_dragcontroller);
+	}
+}
+
+if (mouse_check_button_pressed(mb_left) && mouse_x > 1366-100 && mouse_x < 1366+100 && mouse_y > 768-100 && mouse_y < 768+100){
+	instance_create(-64,448,obj_cat);
+}
