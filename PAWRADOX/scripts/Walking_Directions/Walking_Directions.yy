@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Walking_Directions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Walking_Directions",
+  "parent":{
+    "name":"Scrips",
+    "path":"folders/Scrips.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

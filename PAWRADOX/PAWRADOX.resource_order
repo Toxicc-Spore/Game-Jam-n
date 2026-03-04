@@ -1,0 +1,21 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Scrips","order":14,"path":"folders/Scrips.yy",},
+    {"name":"Objects","order":10,"path":"folders/Objects.yy",},
+    {"name":"Rooms","order":12,"path":"folders/Rooms.yy",},
+    {"name":"Sprite","order":11,"path":"folders/Sprite.yy",},
+    {"name":"TileSets","order":13,"path":"folders/TileSets.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"Obj_Player","order":1,"path":"objects/Obj_Player/Obj_Player.yy",},
+    {"name":"Spr_Collision","order":4,"path":"sprites/Spr_Collision/Spr_Collision.yy",},
+    {"name":"Spr_Running_Down","order":6,"path":"sprites/Spr_Running_Down/Spr_Running_Down.yy",},
+    {"name":"Spr_Running_Left","order":7,"path":"sprites/Spr_Running_Left/Spr_Running_Left.yy",},
+    {"name":"Spr_Running_Right","order":8,"path":"sprites/Spr_Running_Right/Spr_Running_Right.yy",},
+    {"name":"Spr_Running_Up","order":9,"path":"sprites/Spr_Running_Up/Spr_Running_Up.yy",},
+    {"name":"Spr_Ts","order":5,"path":"sprites/Spr_Ts/Spr_Ts.yy",},
+    {"name":"Spr_Walking_Down","order":1,"path":"sprites/Spr_Walking_Down/Spr_Walking_Down.yy",},
+    {"name":"Spr_Walking_Right","order":2,"path":"sprites/Spr_Walking_Right/Spr_Walking_Right.yy",},
+    {"name":"Spr_Walking_Up","order":3,"path":"sprites/Spr_Walking_Up/Spr_Walking_Up.yy",},
+  ],
+}
