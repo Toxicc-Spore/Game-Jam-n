@@ -36,9 +36,6 @@
     "name":"spr_catH",
     "path":"sprites/spr_catH/spr_catH.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_cat_mask",
-    "path":"sprites/spr_cat_mask/spr_cat_mask.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

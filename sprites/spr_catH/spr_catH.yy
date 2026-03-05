@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_catH",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":56,
-  "bbox_left":0,
-  "bbox_right":94,
+  "bbox_left":16,
+  "bbox_right":80,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
