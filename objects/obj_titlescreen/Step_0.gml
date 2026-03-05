@@ -1,3 +1,1 @@
-if (keyboard_check(vk_enter)){
-	room_goto(puzzle_test1);
-}
+instance_create_depth(fa_center, fa_middle, -bbox_bottom, obj_play_button);
