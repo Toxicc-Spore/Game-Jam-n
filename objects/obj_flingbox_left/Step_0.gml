@@ -7,5 +7,3 @@ if (place_meeting(x,y,obj_cat)){
 	obj_cat.movespeedH = -obj_cat.mainspeed;
 	obj_cat.movespeedV = 0;
 }
-
-

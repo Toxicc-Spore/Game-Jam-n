@@ -7,6 +7,7 @@ real_taunttext = "";
 textspeed = 3;
 text_i = 1;
 alarm[0] = textspeed;
+drawy = view_get_hport(view_camera[0])-60;
 
 if (room == puzzle_test1){
 	editor_addobject(obj_flingbox_right, spr_box_right, 3);

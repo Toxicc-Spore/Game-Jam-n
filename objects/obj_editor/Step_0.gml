@@ -18,5 +18,22 @@ for (var i = 0; i < array_length(ObjectArray); i++)
 }
 
 if (mouse_check_button_pressed(mb_left) && mouse_x > 1366-100 && mouse_x < 1366+100 && mouse_y > 768-100 && mouse_y < 768+100){
-	instance_create(-128,384,obj_cat);
+	if (!global.testing){
+		instance_create(0,384,obj_cat);
+		global.testing = true;
+	}
+	else{
+		instance_destroy(obj_cat);
+		global.testing = false;			
+	}
 }
+
+if (global.testing){
+	if (obj_cat.x < 0 || obj_cat.x > room_width || obj_cat.y < 0 || obj_cat.y > room_height)
+		instance_destroy(obj_cat);
+}
+
+if (global.testing)
+	drawy = approach(drawy,800,5);
+else
+	drawy = approach(drawy,view_get_hport(view_camera[0])-60,5);

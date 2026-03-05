@@ -19,13 +19,10 @@ draw_set_alpha(1);
 draw_rectangle_color(0,view_get_hport(view_camera[0])-100,1366,view_get_hport(view_camera[0]),c_gray,c_gray,c_gray,c_gray,false);
 
 for (var i = 0; i < array_length(ObjectArray); i += 1){
-	draw_sprite(ObjectSpriteArray[i], 0, 320+i*150, view_get_hport(view_camera[0])-60);
-	
 	draw_set_color(c_black);
-	draw_text(350+i*150, view_get_hport(view_camera[0])-80, "X" + string(ObjectAmountArray[i]));
+	draw_sprite(ObjectSpriteArray[i], 0, 320+i*150, drawy);
+	draw_text(350+i*150, drawy-20, "X" + string(ObjectAmountArray[i]));
 }
-
-
 
 
 //draw heads
@@ -36,4 +33,4 @@ draw_sprite(spr_playerhead,0,0,550);
 draw_text(20,200,real_taunttext);
 
 //draw play button
-draw_sprite(spr_editor_start,0,1366,768);
+draw_sprite(spr_editor_start,global.testing,1366,768);

@@ -35,6 +35,9 @@
     "name":"spr_box_right",
     "path":"sprites/spr_box_right/spr_box_right.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_box_mask",
+    "path":"sprites/spr_box_mask/spr_box_mask.yy",
+  },
   "visible":true,
 }
