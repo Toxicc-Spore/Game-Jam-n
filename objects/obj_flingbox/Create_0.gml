@@ -101,7 +101,6 @@ box_direction = FACING.UP;
 		if (state_frame = STATE_FRAMES.START) { // when entering this frame
 			// Reset Variables
 			shot = false
-			cat_cooldown_timer = cat_cooldown_length
 			
 			state_frame = STATE_FRAMES.LOOP // run during frames code
 		} else if (state_frame = STATE_FRAMES.LOOP) { // during frame
