@@ -1,5 +1,6 @@
 ///@desc Delete Cat
 
+// squash the cat
 image_xscale -= 0.05;
 x += 2
 if (image_xscale<=0){

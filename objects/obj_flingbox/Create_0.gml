@@ -4,6 +4,8 @@ transfertoX = false;
 box_direction = FACING.UP;
 
 #region State Machine
+	// The State Machine is kind of  complicated, if you've never seen it done like this, this is where i got the base from - Torrent
+		// https://www.youtube.com/watch?v=yfFzz9mZkU4
 	enum STATE_FRAMES {
 		START,
 		LOOP,
@@ -30,7 +32,9 @@ box_direction = FACING.UP;
 		if (state_frame = STATE_FRAMES.START) { // when entering this frame
 			
 			state_frame = STATE_FRAMES.LOOP // run during frames code
-		} else if (state_frame = STATE_FRAMES.LOOP) { // during frame
+		} else if (state_frame = STATE_FRAMES.LOOP) { // during 
+			
+			// Mouse Interactions
 			if (instance_position(mouse_x, mouse_y, id)){
 				// Dragging
 				if (mouse_check_button_pressed(mb_left)){
@@ -62,6 +66,7 @@ box_direction = FACING.UP;
 				instance_destroy();
 			}
 			
+			// When testing, exit editor mode
 			if (global.testing) change_state(state_empty)
 			
 		} else if (state_frame = STATE_FRAMES.END) { // when exiting this frame
@@ -76,7 +81,11 @@ box_direction = FACING.UP;
 			
 			state_frame = STATE_FRAMES.LOOP // run during frames code
 		} else if (state_frame = STATE_FRAMES.LOOP) { // during frame
+			
+			// if not testing, enter editor mode
 			if (global.testing = false) change_state(state_editor)
+			
+			// if colliding with cat, destroy the cat and go to the holding state
 			if (place_meeting(x, y, obj_cat)) {
 				instance_destroy(obj_cat)
 				change_state(state_holding_cat)
@@ -87,27 +96,30 @@ box_direction = FACING.UP;
 		}
 	}
 	
-	cat_cooldown_timer = 0
-	cat_cooldown_length = 5
 	shot = false
 	state_holding_cat = function() {
 		if (state_frame = STATE_FRAMES.START) { // when entering this frame
 			// Reset Variables
-			cat_cooldown_timer = 0
-			cat_cooldown_length = 5
 			shot = false
 			cat_cooldown_timer = cat_cooldown_length
 			
 			state_frame = STATE_FRAMES.LOOP // run during frames code
 		} else if (state_frame = STATE_FRAMES.LOOP) { // during frame
+			
+			// if not testing, enter editor mode
 			if (global.testing = false) change_state(state_editor)
 			
+			// if cat has been shot
 			if shot {
-				cat_cooldown_timer--
-				if cat_cooldown_length <= 0 {
+				// if not colliding with cat to prevent infinite loops
+				if !place_meeting(x, y, obj_cat) {
 					change_state(state_empty)
 				}
-			} else {
+			} else { // if cat is still held
+				
+				// when animations are made, we can check for the end of the animation to release the cat
+				
+				// release the cat in correct direction
 				with (instance_create_layer(x, y, "Instances", obj_cat)) {
 					movement_direction = other.box_direction;
 					other.shot = true

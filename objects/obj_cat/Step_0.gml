@@ -1,4 +1,6 @@
+// if not dead
 if do_move {
+	// move in current direction
 	if movement_direction = FACING.UP {
 		y -= mainspeed
 	} else if movement_direction = FACING.DOWN {
