@@ -10,5 +10,5 @@ for (var i = 0; i < array_length(name_array); i += 1)
     else
         draw_set_colour(c_white);
 
-    draw_text(room_width/2, drawy + i * 30 + sec_space, name_array[i]);
+    draw_text(room_width/2, drawy + i * 20 + sec_space, name_array[i]);
 }

@@ -1,1 +1,1 @@
-drawy -= 3;
+drawy -= 1;

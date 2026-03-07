@@ -18,6 +18,9 @@ add_section("Voice Acting");
 add_credit("Villain - dabestestboi");
 add_credit("Agent kitty - I DONT KNOWS");
 
+add_section("And...");
+add_credit("You!");
+
 function add_credit(_name){
 	array_push(name_array, _name);
 	array_push(type_array, "credit");
