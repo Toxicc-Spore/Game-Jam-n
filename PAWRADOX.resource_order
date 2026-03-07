@@ -54,6 +54,7 @@
     {"name":"spr_button","order":20,"path":"sprites/spr_button/spr_button.yy",},
     {"name":"spr_direction_editoricon","order":4,"path":"sprites/spr_direction_editoricon/spr_direction_editoricon.yy",},
     {"name":"spr_editor_start","order":9,"path":"sprites/spr_editor_start/spr_editor_start.yy",},
+    {"name":"spr_gridbg","order":21,"path":"sprites/spr_gridbg/spr_gridbg.yy",},
     {"name":"spr_levelcompleter","order":12,"path":"sprites/spr_levelcompleter/spr_levelcompleter.yy",},
     {"name":"spr_logo","order":1,"path":"sprites/spr_logo/spr_logo.yy",},
     {"name":"spr_poof","order":17,"path":"sprites/spr_poof/spr_poof.yy",},
@@ -61,6 +62,5 @@
     {"name":"spr_smallpoof","order":19,"path":"sprites/spr_smallpoof/spr_smallpoof.yy",},
     {"name":"spr_solid","order":14,"path":"sprites/spr_solid/spr_solid.yy",},
     {"name":"spr_tempbg","order":15,"path":"sprites/spr_tempbg/spr_tempbg.yy",},
-    {"name":"Sprite17","order":21,"path":"sprites/Sprite17/Sprite17.yy",},
   ],
 }
