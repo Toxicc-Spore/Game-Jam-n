@@ -31,6 +31,7 @@
   "ResourceOrderSettings":[
     {"name":"obj_box_tuthint","order":16,"path":"objects/obj_box_tuthint/obj_box_tuthint.yy",},
     {"name":"obj_button","order":2,"path":"objects/obj_button/obj_button.yy",},
+    {"name":"obj_credits","order":17,"path":"objects/obj_credits/obj_credits.yy",},
     {"name":"obj_dragcontroller","order":2,"path":"objects/obj_dragcontroller/obj_dragcontroller.yy",},
     {"name":"obj_editor","order":1,"path":"objects/obj_editor/obj_editor.yy",},
     {"name":"obj_fadeout","order":1,"path":"objects/obj_fadeout/obj_fadeout.yy",},
@@ -42,6 +43,7 @@
     {"name":"obj_play_button","order":2,"path":"objects/obj_play_button/obj_play_button.yy",},
     {"name":"obj_solid","order":1,"path":"objects/obj_solid/obj_solid.yy",},
     {"name":"obj_startpoint","order":13,"path":"objects/obj_startpoint/obj_startpoint.yy",},
+    {"name":"Credits","order":6,"path":"rooms/Credits/Credits.yy",},
     {"name":"Init","order":2,"path":"rooms/Init/Init.yy",},
     {"name":"Levelselect","order":3,"path":"rooms/Levelselect/Levelselect.yy",},
     {"name":"puzzle_tutorial1","order":1,"path":"rooms/puzzle_tutorial1/puzzle_tutorial1.yy",},
