@@ -48,6 +48,7 @@
   "name":"pawradox",
   "resources":[
     {"id":{"name":"fnt_basic","path":"fonts/fnt_basic/fnt_basic.yy",},},
+    {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"obj_cat","path":"objects/obj_cat/obj_cat.yy",},},
     {"id":{"name":"obj_debugroomselect","path":"objects/obj_debugroomselect/obj_debugroomselect.yy",},},
     {"id":{"name":"obj_dragcontroller","path":"objects/obj_dragcontroller/obj_dragcontroller.yy",},},
@@ -79,6 +80,7 @@
     {"id":{"name":"sfx_select","path":"sounds/sfx_select/sfx_select.yy",},},
     {"id":{"name":"spr_box_editoricon","path":"sprites/spr_box_editoricon/spr_box_editoricon.yy",},},
     {"id":{"name":"spr_box_up","path":"sprites/spr_box_up/spr_box_up.yy",},},
+    {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_cat","path":"sprites/spr_cat/spr_cat.yy",},},
     {"id":{"name":"spr_direction_editoricon","path":"sprites/spr_direction_editoricon/spr_direction_editoricon.yy",},},
     {"id":{"name":"spr_editor_start","path":"sprites/spr_editor_start/spr_editor_start.yy",},},
