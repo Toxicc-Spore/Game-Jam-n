@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_dragcontroller",
+  "%Name":"obj_blahaj_warp",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_dragcontroller",
+  "name":"obj_blahaj_warp",
   "overriddenProperties":[],
   "parent":{
-    "name":"Hidden",
-    "path":"folders/Objects/Hidden.yy",
+    "name":"Gimmicks",
+    "path":"folders/Objects/Gimmicks.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_blahaj_warp",
+    "path":"sprites/spr_blahaj_warp/spr_blahaj_warp.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

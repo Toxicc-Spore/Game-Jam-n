@@ -38,10 +38,11 @@ if (y > view_get_hport(view_camera[0])-100 && !instance_exists(obj_dragcontrolle
 	obj_editor.ObjectAmountArray[array_get_index(obj_editor.ObjectArray,object_index)] += 1;
 	instance_destroy();
 	audio_play_sound(sfx_delete,1,0);
+	instance_destroy(warpto_point);
 }
 
 
-//Cat interactions
+
 if (place_meeting(x, y, obj_cat)){
 	if (box_direction = FACING.UP)
 		obj_cat.x = x;

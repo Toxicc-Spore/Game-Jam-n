@@ -3,10 +3,10 @@ global.targetroom = noone;
 global.levelcomplete = false;
 
 enum FACING {
-	UP,
-	LEFT,
-	RIGHT,
-	DOWN
+	UP = 0,
+	RIGHT = 1,
+	DOWN = 2,
+	LEFT = 3
 }
 
 //each of these numbers is the frame on the animation

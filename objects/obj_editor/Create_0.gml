@@ -29,31 +29,31 @@ villain_taunttextlevel2_to_3 = "";
 
 if (room == puzzle_test1){
 	editor_addobject(obj_flingbox, spr_box_editoricon, 4);
+	editor_addobject(obj_clonebox, spr_clonebox_editoricon, 4);
 	villain_taunttext1 = "Ho Ho! Im the bad guy!\nCan you beat my evil\ntest room!?";
 }
 
 if (room == puzzle_tutorial1){
 	editor_addobject(obj_flingbox, spr_box_editoricon, 1);
-	villain_taunttext1 = "Welcome to training\nsoftware 1.2.16!";
+	villain_taunttext1 = "Welcome to training\nsoftware 1.3.2!";
 	villain_taunttext2 = "The first part of\nyou're training is\nblock construction";
 	villain_taunttext3 = "Try dragging the\nBox into the outlined spot";
-	villain_taunttext99 = "Wrong you dumbass";
-	villain_taunttext100 = "Corrent you smart";
-	villain_taunttext4 = "Now press the play\nbutton"
-	villain_taunttextlevel1_to_2 = "TRAINING 1 COMPLETE\nNEXT COUSE..."
+	villain_taunttext99 = "Wrong Dumbass.\ndrag the box into the\noutlined spot";
+	villain_taunttext100 = "Correct!";
+	villain_taunttext4 = "Now press the play\nbutton";
+	villain_taunttextlevel1_to_2 = "TRAINING PT 1: COMPLETE\nLoading next course...";
 }
 
-if (room == puzzle_tutorial2){
+if (room == puzzle_tutorial2){ 
 	editor_addobject(obj_flingbox, spr_box_editoricon, 1);
 	villain_taunttext1 = "Rotating";
 	villain_taunttext2 = "You may need to\nrotate sometimes!!";
 	villain_taunttext3 = "Try placing and\nright clicking the\nbox to face down";
 	villain_taunttext99 = "Wrong you dumbass";
 	villain_taunttext100 = "Corrent you smart";
-	villain_taunttext4 = "Now press the play\nbutton"
-	villain_taunttextlevel2_to_3 = "TRAINING 2 COMPLETE\nFINISHING..."
+	villain_taunttext4 = "Now press the play\nbutton";
+	villain_taunttextlevel2_to_3 = "TRAINING COMPLETE\nGoodbye!";
 }
-
 
 
 

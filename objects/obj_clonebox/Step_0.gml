@@ -43,22 +43,20 @@ if (y > view_get_hport(view_camera[0])-100 && !instance_exists(obj_dragcontrolle
 
 //Cat interactions
 if (place_meeting(x, y, obj_cat)){
-	if (box_direction = FACING.UP)
-		obj_cat.x = x;
-
-	if (box_direction = FACING.DOWN)
-		obj_cat.x = x;
-
-	if (box_direction = FACING.LEFT)
-		obj_cat.y = y;
-		
-	if (box_direction = FACING.RIGHT)
-		obj_cat.y = y;
-
-	obj_cat.movement_direction = box_direction;
+	if (touched == false){
+		with instance_create(x,y,obj_cat){
+			movement_direction = other.box_direction;
+			if (movement_direction == 4)
+				movement_direction = 0;
+		}
+		touched = true;
+	}
 
     if (!instance_position(x, y, obj_poof)){
         instance_create(x, y, obj_poof);
 		audio_play_sound(sfx_poof,1,0);	
 	}
+}
+else{
+	touched = false;	
 }

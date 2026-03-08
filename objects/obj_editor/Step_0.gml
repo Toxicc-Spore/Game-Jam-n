@@ -14,14 +14,23 @@ for (var i = 0; i < array_length(ObjectArray); i++)
 			exit;
 			
 		var object = instance_create(mouse_x, mouse_y, ObjectArray[i]);
-		global.dragid = object.id;
 		ObjectAmountArray[i] -= 1;
-		instance_create(x,y,obj_dragcontroller);
+		with instance_create(x,y,obj_dragcontroller)
+			dragid = object.id;
+			
+		if (object.object_index == obj_blahaj){
+			with instance_create(x,y,obj_dragcontroller){
+				var goto_point = instance_create(mouse_x, mouse_y, obj_blahaj_warp);
+				dragid = goto_point.id;
+				object.warpto_point = goto_point.id;
+				dragoffsetX	= 64;
+			}
+		}
 	}
 }
 
 if (mouse_check_button_pressed(mb_left) && mouse_x > 1366-100 && mouse_x < 1366+100 && mouse_y > 768-100 && mouse_y < 768+100){
-	if ((room == puzzle_tutorial1 || room == puzzle_tutorial2) && villain_taunttext != villain_taunttext4)
+	if (global.levelcomplete == true || (room == puzzle_tutorial1 || room == puzzle_tutorial2) && villain_taunttext != villain_taunttext4)
 		exit;
 
 			
@@ -58,7 +67,7 @@ if (global.levelcomplete == true){
 if (room != puzzle_tutorial1 && room != puzzle_tutorial2)
 	exit;
 
-if (instance_exists(obj_flingbox) && (villain_taunttext == villain_taunttext3 || villain_taunttext == villain_taunttext99) && global.dragid == noone){
+if (instance_exists(obj_flingbox) && (villain_taunttext == villain_taunttext3 || villain_taunttext == villain_taunttext99) && !instance_exists(obj_dragcontroller)){
 	var target_x = obj_box_tuthint.x + 32;
 	var target_y = obj_box_tuthint.y + 32;
 
