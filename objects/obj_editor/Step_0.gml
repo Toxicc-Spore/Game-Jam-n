@@ -54,8 +54,10 @@ if (global.testing && instance_exists(obj_cat)){
 //hide placable objects when testing
 if (global.testing)
 	drawy = approach(drawy,800,5);
-else
+else{
 	drawy = approach(drawy,view_get_hport(view_camera[0])-60,5);
+	boxtouched_count = 0;
+}
 
 //when completing a level, change the heads in the corners
 if (global.levelcomplete == true){

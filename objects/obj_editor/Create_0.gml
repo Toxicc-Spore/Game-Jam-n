@@ -13,6 +13,7 @@ alarm[0] = textspeed;
 drawy = view_get_hport(view_camera[0])-60;
 VillainHeadEmote = HeadEmote.Normal;
 PlayerHeadEmote = HeadEmote.Normal;
+boxtouched_count = 0;
 
 #region text
 villain_taunttext = "";
