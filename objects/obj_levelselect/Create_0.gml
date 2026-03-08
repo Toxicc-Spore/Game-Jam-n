@@ -6,6 +6,8 @@ hovernumber = 0;
 add_level(puzzle_test1, spr_level1_icon, "Testroom");
 add_level(puzzle_tutorial1, spr_level1_icon, "Tutorial");
 add_level(Credits, spr_level1_icon, "Credits");
+add_level(puzzle_1, spr_level1_icon, "Level 1");
+add_level(puzzle_2, spr_level1_icon, "Level 2");
 
 function add_level(_level, icon, name){
 	array_push(room_array, _level);

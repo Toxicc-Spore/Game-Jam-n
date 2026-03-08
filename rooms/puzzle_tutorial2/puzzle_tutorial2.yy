@@ -23,8 +23,8 @@
   ],
   "name":"puzzle_tutorial2",
   "parent":{
-    "name":"Test Rooms",
-    "path":"folders/Rooms/Test Rooms.yy",
+    "name":"Tutorial",
+    "path":"folders/Rooms/Tutorial.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
