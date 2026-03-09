@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Boxes",
-    "path":"folders/Objects/Gimmicks/Boxes.yy",
+    "path":"folders/Objects/Level Elements/Boxes.yy",
   },
   "parentObjectId":null,
   "persistent":false,

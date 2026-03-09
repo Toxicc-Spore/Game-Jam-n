@@ -16,8 +16,8 @@ draw_sprite(spr_villainhead,VillainHeadEmote,0,0);
 draw_sprite(spr_playerhead,PlayerHeadEmote,0,550);
 draw_text(20,200,real_taunttext);
 
-if (room == puzzle_tutorial1 || room == puzzle_tutorial2){
-	if (text_i > string_length(villain_taunttext) && villain_taunttext != villain_taunttext99 && villain_taunttext != villain_taunttext4 && villain_taunttext != villain_taunttext3)
+if (room == roo_puzzle_tutorial1 || room == roo_puzzle_tutorial2){
+	if (text_i > string_length(current_villain_taunttext) && current_villain_taunttext != villain_taunttext99 && current_villain_taunttext != villain_taunttext4 && current_villain_taunttext != villain_taunttext3)
 		draw_sprite(spr_click_hint, image_index, 200, 500)
 }
 

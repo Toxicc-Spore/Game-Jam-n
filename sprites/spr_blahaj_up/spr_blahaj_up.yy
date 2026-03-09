@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Blahaj",
-    "path":"folders/Sprites/Gimmicks/Blahaj.yy",
+    "path":"folders/Sprites/Level Elements/Blahaj.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Clone boxes",
-    "path":"folders/Sprites/Gimmicks/Clone boxes.yy",
+    "path":"folders/Sprites/Level Elements/Clone boxes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

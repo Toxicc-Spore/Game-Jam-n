@@ -1,15 +1,15 @@
 {
   "$GMRoom":"v1",
-  "%Name":"puzzle_tutorial1",
+  "%Name":"roo_puzzle_tutorial1",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_6EA355C3_1","path":"rooms/puzzle_tutorial1/puzzle_tutorial1.yy",},
-    {"name":"inst_68F4395_1","path":"rooms/puzzle_tutorial1/puzzle_tutorial1.yy",},
-    {"name":"inst_1E683304_1","path":"rooms/puzzle_tutorial1/puzzle_tutorial1.yy",},
-    {"name":"inst_74DD7025","path":"rooms/puzzle_tutorial1/puzzle_tutorial1.yy",},
+    {"name":"inst_6EA355C3_1","path":"rooms/roo_puzzle_tutorial1/roo_puzzle_tutorial1.yy",},
+    {"name":"inst_68F4395_1","path":"rooms/roo_puzzle_tutorial1/roo_puzzle_tutorial1.yy",},
+    {"name":"inst_1E683304_1","path":"rooms/roo_puzzle_tutorial1/roo_puzzle_tutorial1.yy",},
+    {"name":"inst_74DD7025","path":"rooms/roo_puzzle_tutorial1/roo_puzzle_tutorial1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -21,7 +21,7 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_gridbg","path":"sprites/spr_gridbg/spr_gridbg.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
-  "name":"puzzle_tutorial1",
+  "name":"roo_puzzle_tutorial1",
   "parent":{
     "name":"Tutorial",
     "path":"folders/Rooms/Tutorial.yy",

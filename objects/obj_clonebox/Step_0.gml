@@ -1,7 +1,7 @@
 //Mouse Interactions
-if (instance_position(mouse_x, mouse_y, id) && global.testing == false && room != puzzle_tutorial1 && (room != puzzle_tutorial2 || (obj_editor.villain_taunttext == obj_editor.villain_taunttext3 || obj_editor.villain_taunttext == obj_editor.villain_taunttext99))){
+if (instance_position(mouse_x, mouse_y, id) && global.testing == false && room != roo_puzzle_tutorial1 && (room != roo_puzzle_tutorial2 || (obj_editor.current_villain_taunttext == obj_editor.villain_taunttext3 || obj_editor.current_villain_taunttext == obj_editor.villain_taunttext99))){
 	//Dragging
-	if (mouse_check_button_pressed(mb_left) && room != puzzle_tutorial2){
+	if (mouse_check_button_pressed(mb_left) && room != roo_puzzle_tutorial2){
 		with instance_create(x,y,obj_dragcontroller)
 			dragid = other.id;
 	}
@@ -42,7 +42,8 @@ if (y > view_get_hport(view_camera[0])-100 && !instance_exists(obj_dragcontrolle
 
 
 //Cat interactions
-if (place_meeting(x, y, obj_cat)){
+var collided_with = instance_place(x, y, obj_cat)
+if (collided_with != noone){
 	if (touched == false){
 		with instance_create(x,y,obj_cat){
 			movement_direction = other.box_direction;

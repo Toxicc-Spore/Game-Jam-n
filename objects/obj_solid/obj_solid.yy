@@ -9,8 +9,8 @@
   "name":"obj_solid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Gimmicks",
-    "path":"folders/Objects/Gimmicks.yy",
+    "name":"Level Elements",
+    "path":"folders/Objects/Level Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,

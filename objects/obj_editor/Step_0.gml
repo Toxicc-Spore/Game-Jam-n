@@ -10,7 +10,7 @@ for (var i = 0; i < array_length(ObjectArray); i++)
 
 	if (mouse_check_button_pressed(mb_left) && ObjectAmountArray[i] != 0 && mouse_x > left && mouse_x < right && mouse_y > top && mouse_y < bottom)
 	{
-		if ((room == puzzle_tutorial1 || room == puzzle_tutorial2) && obj_editor.villain_taunttext != obj_editor.villain_taunttext3 && obj_editor.villain_taunttext != obj_editor.villain_taunttext99)
+		if ((room == roo_puzzle_tutorial1 || room == roo_puzzle_tutorial2) && obj_editor.current_villain_taunttext != obj_editor.villain_taunttext3 && obj_editor.current_villain_taunttext != obj_editor.villain_taunttext99)
 			exit;
 			
 		var object = instance_create(mouse_x, mouse_y, ObjectArray[i]);
@@ -30,7 +30,7 @@ for (var i = 0; i < array_length(ObjectArray); i++)
 }
 
 if (mouse_check_button_pressed(mb_left) && mouse_x > 1366-100 && mouse_x < 1366+100 && mouse_y > 768-100 && mouse_y < 768+100){
-	if (global.levelcomplete == true || (room == puzzle_tutorial1 || room == puzzle_tutorial2) && villain_taunttext != villain_taunttext4)
+	if (global.levelcomplete == true || (room == roo_puzzle_tutorial1 || room == roo_puzzle_tutorial2) && current_villain_taunttext != villain_taunttext4)
 		exit;
 
 			
@@ -40,7 +40,7 @@ if (mouse_check_button_pressed(mb_left) && mouse_x > 1366-100 && mouse_x < 1366+
 		audio_play_sound(sfx_play,1,0);
 	}
 	else{
-		if (room != puzzle_tutorial1 && room != puzzle_tutorial2)
+		if (room != roo_puzzle_tutorial1 && room != roo_puzzle_tutorial2)
 			end_testing();
 	}
 }
@@ -66,15 +66,15 @@ if (global.levelcomplete == true){
 }
 
 #region tutorial stuff
-if (room != puzzle_tutorial1 && room != puzzle_tutorial2)
+if (room != roo_puzzle_tutorial1 && room != roo_puzzle_tutorial2)
 	exit;
 
-if (instance_exists(obj_flingbox) && (villain_taunttext == villain_taunttext3 || villain_taunttext == villain_taunttext99) && !instance_exists(obj_dragcontroller)){
+if (instance_exists(obj_flingbox) && (current_villain_taunttext == villain_taunttext3 || current_villain_taunttext == villain_taunttext99) && !instance_exists(obj_dragcontroller)){
 	var target_x = obj_box_tuthint.x + 32;
 	var target_y = obj_box_tuthint.y + 32;
 
 	if (obj_flingbox.x == target_x && obj_flingbox.y == target_y){
-		if (room == puzzle_tutorial2 && obj_flingbox.box_direction != FACING.DOWN)
+		if (room == roo_puzzle_tutorial2 && obj_flingbox.box_direction != FACING.DOWN)
 			exit;
 			
 		set_taunt(villain_taunttext100);
@@ -89,8 +89,8 @@ if (instance_exists(obj_flingbox) && (villain_taunttext == villain_taunttext3 ||
 }
 
 // Handle mouse click dialogue progression
-if (mouse_check_button_pressed(mb_left) && text_i > string_length(villain_taunttext)) {
-	switch (villain_taunttext) {
+if (mouse_check_button_pressed(mb_left) && text_i > string_length(current_villain_taunttext)) {
+	switch (current_villain_taunttext) {
 		case villain_taunttext1:
 			set_taunt(villain_taunttext2);
 			exit;
@@ -104,11 +104,11 @@ if (mouse_check_button_pressed(mb_left) && text_i > string_length(villain_tauntt
 			exit;
 		
 		case villain_taunttextlevel1_to_2:
-			room_fadeto(puzzle_tutorial2);
+			//room_fadeto(roo_puzzle_tutorial2);
 			exit;		
 			
 		case villain_taunttextlevel2_to_3:
-			room_fadeto(Levelselect);
+			//room_fadeto(roo_levelselect);
 			exit;
 	}
 }

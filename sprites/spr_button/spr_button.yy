@@ -27,7 +27,7 @@
   "origin":0,
   "parent":{
     "name":"Button",
-    "path":"folders/Sprites/Gimmicks/Button.yy",
+    "path":"folders/Sprites/Level Elements/Button.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

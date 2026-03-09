@@ -2,18 +2,19 @@ global.testing = false;
 global.targetroom = noone;
 global.levelcomplete = false;
 
+// btw, enums dont need assignments unless its different than 0, 1, 2, etc.
 enum FACING {
-	UP = 0,
-	RIGHT = 1,
-	DOWN = 2,
-	LEFT = 3
+	UP,
+	RIGHT,
+	DOWN,
+	LEFT
 }
 
 //each of these numbers is the frame on the animation
 enum HeadEmote {
-	Normal = 0,
-	Win = 1,
-	Lose = 2
+	Normal,
+	Win,
+	Lose
 }
 
-room_goto(Titlescreen);
+room_goto(roo_titlescreen);

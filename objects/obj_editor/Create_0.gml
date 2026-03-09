@@ -16,7 +16,7 @@ PlayerHeadEmote = HeadEmote.Normal;
 boxtouched_count = 0;
 
 #region text
-villain_taunttext = "";
+current_villain_taunttext = "";
 villain_taunttext1 = "Error!";
 villain_taunttext2 = "";
 villain_taunttext3 = "";
@@ -28,23 +28,23 @@ villain_taunttextlevel1_to_2 = "";
 villain_taunttextlevel2_to_3 = "";
 #endregion
 
-if (room == puzzle_test1){
+if (room == roo_puzzle_test1){
 	editor_addobject(obj_flingbox, spr_box_editoricon, 4);
 	editor_addobject(obj_clonebox, spr_clonebox_editoricon, 4);
 	villain_taunttext1 = "Ho Ho! Im the bad guy!\nCan you beat my evil\ntest room!?";
 }
 
-if (room == puzzle_1){
+if (room == roo_puzzle_1){
 	editor_addobject(obj_flingbox, spr_box_editoricon, 3);
 	villain_taunttext1 = "Hi i can't write dialog!\n   -ralcactus lv 1";
 }
 
-if (room == puzzle_2){
+if (room == roo_puzzle_2){
 	editor_addobject(obj_flingbox, spr_box_editoricon, 5);
 	villain_taunttext1 = "Hi i can't write dialog!\n   -ralcactus lv 2";
 }
 
-if (room == puzzle_tutorial1){
+if (room == roo_puzzle_tutorial1){
 	editor_addobject(obj_flingbox, spr_box_editoricon, 1);
 	villain_taunttext1 = "Welcome to training\nsoftware 1.3.2!";
 	villain_taunttext2 = "The first part of\nyou're training is\nblock construction";
@@ -55,7 +55,7 @@ if (room == puzzle_tutorial1){
 	villain_taunttextlevel1_to_2 = "TRAINING PT 1: COMPLETE\nLoading next course...";
 }
 
-if (room == puzzle_tutorial2){ 
+if (room == roo_puzzle_tutorial2){ 
 	editor_addobject(obj_flingbox, spr_box_editoricon, 1);
 	villain_taunttext1 = "Rotating";
 	villain_taunttext2 = "You may need to\nrotate sometimes!!";
@@ -76,7 +76,7 @@ function editor_addobject(object, sprite, amount){
 }
 
 function set_taunt(_text) {
-	villain_taunttext = _text;
+	current_villain_taunttext = _text;
 	text_i = 1;
 	alarm[0] = 1;
 	real_taunttext = "";
@@ -87,5 +87,5 @@ end_testing = function() {
 	instance_destroy(obj_cat)
 }
 
-villain_taunttext = villain_taunttext1;
+current_villain_taunttext = villain_taunttext1;
 
