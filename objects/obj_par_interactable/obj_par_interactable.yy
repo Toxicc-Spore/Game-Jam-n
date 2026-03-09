@@ -1,22 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pushtile",
+  "%Name":"obj_par_interactable",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_cat","path":"objects/obj_cat/obj_cat.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pushtile",
+  "name":"obj_par_interactable",
   "overriddenProperties":[],
   "parent":{
     "name":"Level Elements",
     "path":"folders/Objects/Level Elements.yy",
   },
-  "parentObjectId":{
-    "name":"obj_par_interactable",
-    "path":"objects/obj_par_interactable/obj_par_interactable.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_push",
-    "path":"sprites/spr_push/spr_push.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

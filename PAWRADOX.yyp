@@ -78,6 +78,7 @@
     {"id":{"name":"obj_levelcomplete","path":"objects/obj_levelcomplete/obj_levelcomplete.yy",},},
     {"id":{"name":"obj_levelselect","path":"objects/obj_levelselect/obj_levelselect.yy",},},
     {"id":{"name":"obj_music","path":"objects/obj_music/obj_music.yy",},},
+    {"id":{"name":"obj_par_interactable","path":"objects/obj_par_interactable/obj_par_interactable.yy",},},
     {"id":{"name":"obj_play_button","path":"objects/obj_play_button/obj_play_button.yy",},},
     {"id":{"name":"obj_poof","path":"objects/obj_poof/obj_poof.yy",},},
     {"id":{"name":"obj_pushtile","path":"objects/obj_pushtile/obj_pushtile.yy",},},
