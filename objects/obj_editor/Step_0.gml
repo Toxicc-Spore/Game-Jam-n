@@ -75,7 +75,7 @@ if (instance_exists(obj_flingbox) && (current_villain_taunttext == villain_taunt
 	var target_y = obj_box_tuthint.y + 32;
 
 	if (obj_flingbox.x == target_x && obj_flingbox.y == target_y){
-		if (room == room_puzzle_tutorial2 && obj_flingbox.box_direction != FACING.DOWN)
+		if (room == room_puzzle_tutorial2 && obj_flingbox.facing != FACING.DOWN)
 			exit;
 			
 		set_taunt(villain_taunttext100);
@@ -105,11 +105,11 @@ if (mouse_check_button_pressed(mb_left) && text_i > string_length(current_villai
 			exit;
 		
 		case villain_taunttextlevel1_to_2:
-			//room_fadeto(roo_puzzle_tutorial2);
+			room_fadeto(room_puzzle_tutorial2);
 			exit;		
 			
 		case villain_taunttextlevel2_to_3:
-			//room_fadeto(roo_levelselect);
+			room_fadeto(room_levelselect);
 			exit;
 	}
 }

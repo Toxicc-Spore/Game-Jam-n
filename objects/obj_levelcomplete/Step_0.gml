@@ -1,5 +1,16 @@
 image_alpha = true_alpha;
 
+if (!global.testing){
+	opened = false;
+	true_alpha = 0.3;
+}
+
+
+if (!instance_exists(obj_switch)){
+	opened = true;
+	true_alpha = 1;
+}
+
 if (place_meeting(x, y, obj_cat) && opened){
     global.levelcomplete = true;
 	instance_destroy(obj_cat);
@@ -15,7 +26,7 @@ if (place_meeting(x, y, obj_cat) && opened){
 		obj_editor.real_taunttext = "";
 	}
 	if (leveloutro)
-			exit;
+		exit;
 			
 	if (!audio_is_playing(sfx_levelcomplete))
 		audio_play_sound(sfx_levelcomplete, 1, 0);
@@ -23,7 +34,10 @@ if (place_meeting(x, y, obj_cat) && opened){
 	leveloutro = true;
 }
 
-if (leveloutro && !audio_is_playing(sfx_levelcomplete)){
+if (leveloutro && !audio_is_playing(sfx_levelcomplete) && room != room_puzzle_tutorial1 && room != room_puzzle_tutorial2){
 	if (!instance_exists(obj_button_nextlevel))
 		instance_create(room_width/2-200, 400, obj_button_nextlevel)
+		
+	if (!instance_exists(obj_button_exitlevel))
+		instance_create(room_width/2-500, 400, obj_button_exitlevel)
 }
