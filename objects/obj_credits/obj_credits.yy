@@ -10,8 +10,8 @@
   "name":"obj_credits",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Other (lazy to sort)",
+    "path":"folders/Objects/Other (lazy to sort).yy",
   },
   "parentObjectId":null,
   "persistent":false,

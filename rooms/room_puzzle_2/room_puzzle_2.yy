@@ -1,17 +1,17 @@
 {
   "$GMRoom":"v1",
-  "%Name":"roo_puzzle_2",
+  "%Name":"room_puzzle_2",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_6EA355C3_2_1","path":"rooms/roo_puzzle_2/roo_puzzle_2.yy",},
-    {"name":"inst_68F4395_2_1","path":"rooms/roo_puzzle_2/roo_puzzle_2.yy",},
-    {"name":"inst_30A04454_1_1","path":"rooms/roo_puzzle_2/roo_puzzle_2.yy",},
-    {"name":"inst_3B07BABE1_1","path":"rooms/roo_puzzle_2/roo_puzzle_2.yy",},
-    {"name":"inst_1E683304_2_1","path":"rooms/roo_puzzle_2/roo_puzzle_2.yy",},
-    {"name":"inst_1420DBB9","path":"rooms/roo_puzzle_2/roo_puzzle_2.yy",},
+    {"name":"inst_6EA355C3_2_1","path":"rooms/room_puzzle_2/room_puzzle_2.yy",},
+    {"name":"inst_68F4395_2_1","path":"rooms/room_puzzle_2/room_puzzle_2.yy",},
+    {"name":"inst_30A04454_1_1","path":"rooms/room_puzzle_2/room_puzzle_2.yy",},
+    {"name":"inst_3B07BABE1_1","path":"rooms/room_puzzle_2/room_puzzle_2.yy",},
+    {"name":"inst_1E683304_2_1","path":"rooms/room_puzzle_2/room_puzzle_2.yy",},
+    {"name":"inst_1420DBB9","path":"rooms/room_puzzle_2/room_puzzle_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -25,7 +25,7 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_gridbg","path":"sprites/spr_gridbg/spr_gridbg.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
-  "name":"roo_puzzle_2",
+  "name":"room_puzzle_2",
   "parent":{
     "name":"W1",
     "path":"folders/Rooms/W1.yy",

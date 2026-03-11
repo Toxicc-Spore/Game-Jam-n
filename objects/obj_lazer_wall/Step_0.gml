@@ -19,15 +19,14 @@ if (image_index == 0){
 	}
 }*/
 
-if (!global.testing) {
+if (!global.testing)
 	image_index = 0;
-}
 
 if (!opened){
 	if (place_meeting(x,y,obj_cat)){
+		global.testing = false;
 		obj_cat.do_move = false;
 		instance_create(obj_cat.x,obj_cat.y,obj_explosion)
-		global.testing = false;
 		instance_destroy(obj_cat);
 	}
 }

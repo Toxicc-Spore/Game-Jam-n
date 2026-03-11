@@ -6,8 +6,8 @@
   "name":"obj_startpoint",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Player can't move",
+    "path":"folders/Objects/Level Elements/Player can't move.yy",
   },
   "parentObjectId":null,
   "persistent":false,

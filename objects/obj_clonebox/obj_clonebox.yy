@@ -11,8 +11,8 @@
   "name":"obj_clonebox",
   "overriddenProperties":[],
   "parent":{
-    "name":"Boxes",
-    "path":"folders/Objects/Level Elements/Boxes.yy",
+    "name":"Player can move",
+    "path":"folders/Objects/Level Elements/Player can move.yy",
   },
   "parentObjectId":{
     "name":"obj_par_interactable",

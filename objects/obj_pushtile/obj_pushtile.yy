@@ -10,8 +10,8 @@
   "name":"obj_pushtile",
   "overriddenProperties":[],
   "parent":{
-    "name":"Level Elements",
-    "path":"folders/Objects/Level Elements.yy",
+    "name":"Player can move",
+    "path":"folders/Objects/Level Elements/Player can move.yy",
   },
   "parentObjectId":{
     "name":"obj_par_interactable",

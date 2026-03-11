@@ -4,8 +4,8 @@ if (place_meeting(x, y, obj_cat) && opened){
     global.levelcomplete = true;
 	instance_destroy(obj_cat);
 	
-	if (room == roo_puzzle_tutorial1 || room == roo_puzzle_tutorial2){
-		if (room == roo_puzzle_tutorial1)
+	if (room == room_puzzle_tutorial1 || room == room_puzzle_tutorial2){
+		if (room == room_puzzle_tutorial1)
 			obj_editor.current_villain_taunttext = obj_editor.villain_taunttextlevel1_to_2;
 		else
 			obj_editor.current_villain_taunttext = obj_editor.villain_taunttextlevel2_to_3;

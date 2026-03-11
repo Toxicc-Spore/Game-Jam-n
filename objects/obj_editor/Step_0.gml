@@ -10,7 +10,7 @@ for (var i = 0; i < array_length(ObjectArray); i++)
 
 	if (mouse_check_button_pressed(mb_left) && ObjectAmountArray[i] != 0 && mouse_x > left && mouse_x < right && mouse_y > top && mouse_y < bottom)
 	{
-		if ((room == roo_puzzle_tutorial1 || room == roo_puzzle_tutorial2) && obj_editor.current_villain_taunttext != obj_editor.villain_taunttext3 && obj_editor.current_villain_taunttext != obj_editor.villain_taunttext99)
+		if ((room == room_puzzle_tutorial1 || room == room_puzzle_tutorial2) && obj_editor.current_villain_taunttext != obj_editor.villain_taunttext3 && obj_editor.current_villain_taunttext != obj_editor.villain_taunttext99)
 			exit;
 			
 		var object = instance_create(mouse_x, mouse_y, ObjectArray[i]);
@@ -29,8 +29,9 @@ for (var i = 0; i < array_length(ObjectArray); i++)
 	}
 }
 
+//play
 if (mouse_check_button_pressed(mb_left) && mouse_x > 1366-100 && mouse_x < 1366+100 && mouse_y > 768-100 && mouse_y < 768+100){
-	if (global.levelcomplete == true || (room == roo_puzzle_tutorial1 || room == roo_puzzle_tutorial2) && current_villain_taunttext != villain_taunttext4)
+	if (global.levelcomplete == true || (room == room_puzzle_tutorial1 || room == room_puzzle_tutorial2) && current_villain_taunttext != villain_taunttext4)
 		exit;
 
 			
@@ -40,7 +41,7 @@ if (mouse_check_button_pressed(mb_left) && mouse_x > 1366-100 && mouse_x < 1366+
 		audio_play_sound(sfx_play,1,0);
 	}
 	else{
-		if (room != roo_puzzle_tutorial1 && room != roo_puzzle_tutorial2)
+		if (room != room_puzzle_tutorial1 && room != room_puzzle_tutorial2)
 			end_testing();
 	}
 }
@@ -66,7 +67,7 @@ if (global.levelcomplete == true){
 }
 
 #region tutorial stuff
-if (room != roo_puzzle_tutorial1 && room != roo_puzzle_tutorial2)
+if (room != room_puzzle_tutorial1 && room != room_puzzle_tutorial2)
 	exit;
 
 if (instance_exists(obj_flingbox) && (current_villain_taunttext == villain_taunttext3 || current_villain_taunttext == villain_taunttext99) && !instance_exists(obj_dragcontroller)){
@@ -74,7 +75,7 @@ if (instance_exists(obj_flingbox) && (current_villain_taunttext == villain_taunt
 	var target_y = obj_box_tuthint.y + 32;
 
 	if (obj_flingbox.x == target_x && obj_flingbox.y == target_y){
-		if (room == roo_puzzle_tutorial2 && obj_flingbox.box_direction != FACING.DOWN)
+		if (room == room_puzzle_tutorial2 && obj_flingbox.box_direction != FACING.DOWN)
 			exit;
 			
 		set_taunt(villain_taunttext100);

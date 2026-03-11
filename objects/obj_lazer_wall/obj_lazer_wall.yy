@@ -10,8 +10,8 @@
   "name":"obj_lazer_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Level Elements",
-    "path":"folders/Objects/Level Elements.yy",
+    "name":"Player can't move",
+    "path":"folders/Objects/Level Elements/Player can't move.yy",
   },
   "parentObjectId":null,
   "persistent":false,

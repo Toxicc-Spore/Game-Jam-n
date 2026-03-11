@@ -8,8 +8,8 @@
   "name":"obj_blahaj_warp",
   "overriddenProperties":[],
   "parent":{
-    "name":"Level Elements",
-    "path":"folders/Objects/Level Elements.yy",
+    "name":"Player can move",
+    "path":"folders/Objects/Level Elements/Player can move.yy",
   },
   "parentObjectId":null,
   "persistent":false,
