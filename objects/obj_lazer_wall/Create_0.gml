@@ -1,4 +1,3 @@
-image_index = 0;
 //needed_ammount = 3;
 door_id = 0;
 opened = false
@@ -11,7 +10,4 @@ check_my_switches = function(){
 			should_open = false
 	}
 	opened = should_open
-	
-	if opened
-		image_index = 1
 }

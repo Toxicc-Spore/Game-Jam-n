@@ -10,8 +10,8 @@
   "name":"obj_blahaj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player can move",
-    "path":"folders/Objects/Level Elements/Player can move.yy",
+    "name":"Movables",
+    "path":"folders/Objects/Level Elements/Movables.yy",
   },
   "parentObjectId":null,
   "persistent":false,

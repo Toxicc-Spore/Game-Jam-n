@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_solid",
+  "%Name":"obj_switch_color_manager",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_solid",
+  "name":"obj_switch_color_manager",
   "overriddenProperties":[],
   "parent":{
-    "name":"Immovables",
-    "path":"folders/Objects/Level Elements/Immovables.yy",
+    "name":"Hidden",
+    "path":"folders/Objects/Hidden.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_solid",
-    "path":"sprites/spr_solid/spr_solid.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
