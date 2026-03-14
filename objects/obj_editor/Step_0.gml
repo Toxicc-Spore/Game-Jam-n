@@ -15,8 +15,11 @@ for (var i = 0; i < array_length(ObjectArray); i++)
 			
 		var object = instance_create(mouse_x, mouse_y, ObjectArray[i]);
 		ObjectAmountArray[i] -= 1;
-		with instance_create(x,y,obj_dragcontroller)
+		with instance_create(x, y, obj_dragcontroller) {
 			dragid = object.id;
+			init_x = object.x
+			init_y = object.y
+		}
 			
 		if (object.object_index == obj_blahaj){
 			with instance_create(x,y,obj_dragcontroller){

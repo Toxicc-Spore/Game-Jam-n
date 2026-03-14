@@ -55,7 +55,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.213",
+    "IDEVersion":"2024.14.2.212",
   },
   "name":"pawradox",
   "resources":[
@@ -80,6 +80,7 @@
     {"id":{"name":"obj_levelselect","path":"objects/obj_levelselect/obj_levelselect.yy",},},
     {"id":{"name":"obj_music","path":"objects/obj_music/obj_music.yy",},},
     {"id":{"name":"obj_option","path":"objects/obj_option/obj_option.yy",},},
+    {"id":{"name":"obj_par_block_placements","path":"objects/obj_par_block_placements/obj_par_block_placements.yy",},},
     {"id":{"name":"obj_par_interactable","path":"objects/obj_par_interactable/obj_par_interactable.yy",},},
     {"id":{"name":"obj_pausemanager","path":"objects/obj_pausemanager/obj_pausemanager.yy",},},
     {"id":{"name":"obj_play_button","path":"objects/obj_play_button/obj_play_button.yy",},},
@@ -120,7 +121,6 @@
     {"id":{"name":"spr_box_editoricon","path":"sprites/spr_box_editoricon/spr_box_editoricon.yy",},},
     {"id":{"name":"spr_box_hint","path":"sprites/spr_box_hint/spr_box_hint.yy",},},
     {"id":{"name":"spr_box_up","path":"sprites/spr_box_up/spr_box_up.yy",},},
-    {"id":{"name":"spr_cat_collidebox","path":"sprites/spr_cat_collidebox/spr_cat_collidebox.yy",},},
     {"id":{"name":"spr_cat","path":"sprites/spr_cat/spr_cat.yy",},},
     {"id":{"name":"spr_click_hint","path":"sprites/spr_click_hint/spr_click_hint.yy",},},
     {"id":{"name":"spr_clonebox_editoricon","path":"sprites/spr_clonebox_editoricon/spr_clonebox_editoricon.yy",},},

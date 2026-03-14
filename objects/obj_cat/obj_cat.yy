@@ -36,9 +36,6 @@
     "name":"spr_cat",
     "path":"sprites/spr_cat/spr_cat.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_cat_collidebox",
-    "path":"sprites/spr_cat_collidebox/spr_cat_collidebox.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
