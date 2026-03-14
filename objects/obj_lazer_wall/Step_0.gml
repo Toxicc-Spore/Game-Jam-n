@@ -6,3 +6,6 @@ if (!opened){
 		instance_destroy(obj_cat);
 	}
 }
+
+if (global.testing == false)
+	opened = false;

@@ -81,6 +81,7 @@
     {"name":"spr_box_editoricon","order":1,"path":"sprites/spr_box_editoricon/spr_box_editoricon.yy",},
     {"name":"spr_box_hint","order":3,"path":"sprites/spr_box_hint/spr_box_hint.yy",},
     {"name":"spr_box_up","order":4,"path":"sprites/spr_box_up/spr_box_up.yy",},
+    {"name":"spr_cat_collidebox","order":3,"path":"sprites/spr_cat_collidebox/spr_cat_collidebox.yy",},
     {"name":"spr_cat","order":2,"path":"sprites/spr_cat/spr_cat.yy",},
     {"name":"spr_click_hint","order":15,"path":"sprites/spr_click_hint/spr_click_hint.yy",},
     {"name":"spr_clonebox_editoricon","order":2,"path":"sprites/spr_clonebox_editoricon/spr_clonebox_editoricon.yy",},

@@ -1,1 +1,1 @@
-door_id = 2
+door_id = 0

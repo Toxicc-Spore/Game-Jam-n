@@ -18,8 +18,8 @@
     {"$GMFolder":"","%Name":"Effects","folderPath":"folders/Objects/Effects.yy","name":"Effects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Hidden","folderPath":"folders/Objects/Hidden.yy","name":"Hidden","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level Elements","folderPath":"folders/Objects/Level Elements.yy","name":"Level Elements","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Movables","folderPath":"folders/Objects/Level Elements/Movables.yy","name":"Movables","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Immovables","folderPath":"folders/Objects/Level Elements/Immovables.yy","name":"Immovables","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Movables","folderPath":"folders/Objects/Level Elements/Movables.yy","name":"Movables","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Other (lazy to sort)","folderPath":"folders/Objects/Other (lazy to sort).yy","name":"Other (lazy to sort)","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Titlescreen","folderPath":"folders/Objects/Titlescreen.yy","name":"Titlescreen","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -55,7 +55,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.212",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"pawradox",
   "resources":[
@@ -120,6 +120,7 @@
     {"id":{"name":"spr_box_editoricon","path":"sprites/spr_box_editoricon/spr_box_editoricon.yy",},},
     {"id":{"name":"spr_box_hint","path":"sprites/spr_box_hint/spr_box_hint.yy",},},
     {"id":{"name":"spr_box_up","path":"sprites/spr_box_up/spr_box_up.yy",},},
+    {"id":{"name":"spr_cat_collidebox","path":"sprites/spr_cat_collidebox/spr_cat_collidebox.yy",},},
     {"id":{"name":"spr_cat","path":"sprites/spr_cat/spr_cat.yy",},},
     {"id":{"name":"spr_click_hint","path":"sprites/spr_click_hint/spr_click_hint.yy",},},
     {"id":{"name":"spr_clonebox_editoricon","path":"sprites/spr_clonebox_editoricon/spr_clonebox_editoricon.yy",},},
