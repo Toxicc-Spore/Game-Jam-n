@@ -6,11 +6,6 @@ if (text_i <= string_length(current_villain_taunttext))
 	}
     real_taunttext += next_char;
 	text_i++;
-	if (next_char == "." || next_char == "?" || next_char == "!") {
-		alarm[0] = textspeed * 15;
-	} else {
-		alarm[0] = textspeed;
-	}
-
+	alarm[0] = textspeed;
 }
 

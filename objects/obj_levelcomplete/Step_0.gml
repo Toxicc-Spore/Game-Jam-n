@@ -1,15 +1,7 @@
+opened = true;
+true_alpha = 1;
 image_alpha = true_alpha;
 
-if (!global.testing){
-	opened = false;
-	true_alpha = 0.3;
-}
-
-
-if (!instance_exists(obj_switch)){
-	opened = true;
-	true_alpha = 1;
-}
 
 if (place_meeting(x, y, obj_cat) && opened){
     global.levelcomplete = true;

@@ -3,6 +3,8 @@ global.targetroom = noone;
 global.levelcomplete = false;
 global.paused = false;
 
+cursor_sprite = spr_cursor;
+
 //load options
 ini_open("SaveFile.ini")
 global.volume = ini_read_real("Options", "Volume", 100);

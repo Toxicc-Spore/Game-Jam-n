@@ -55,7 +55,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.212",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"pawradox",
   "resources":[
@@ -100,6 +100,8 @@
     {"id":{"name":"room_levelselect","path":"rooms/room_levelselect/room_levelselect.yy",},},
     {"id":{"name":"room_puzzle_1","path":"rooms/room_puzzle_1/room_puzzle_1.yy",},},
     {"id":{"name":"room_puzzle_2","path":"rooms/room_puzzle_2/room_puzzle_2.yy",},},
+    {"id":{"name":"room_puzzle_3","path":"rooms/room_puzzle_3/room_puzzle_3.yy",},},
+    {"id":{"name":"room_puzzle_4","path":"rooms/room_puzzle_4/room_puzzle_4.yy",},},
     {"id":{"name":"room_puzzle_test1","path":"rooms/room_puzzle_test1/room_puzzle_test1.yy",},},
     {"id":{"name":"room_puzzle_tutorial1","path":"rooms/room_puzzle_tutorial1/room_puzzle_tutorial1.yy",},},
     {"id":{"name":"room_puzzle_tutorial2","path":"rooms/room_puzzle_tutorial2/room_puzzle_tutorial2.yy",},},
@@ -127,6 +129,7 @@
     {"id":{"name":"spr_click_hint","path":"sprites/spr_click_hint/spr_click_hint.yy",},},
     {"id":{"name":"spr_clonebox_editoricon","path":"sprites/spr_clonebox_editoricon/spr_clonebox_editoricon.yy",},},
     {"id":{"name":"spr_clonebox_up","path":"sprites/spr_clonebox_up/spr_clonebox_up.yy",},},
+    {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
     {"id":{"name":"spr_editor_pause","path":"sprites/spr_editor_pause/spr_editor_pause.yy",},},
     {"id":{"name":"spr_editor_start","path":"sprites/spr_editor_start/spr_editor_start.yy",},},
     {"id":{"name":"spr_exitlevel","path":"sprites/spr_exitlevel/spr_exitlevel.yy",},},
@@ -138,6 +141,7 @@
     {"id":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},},
     {"id":{"name":"spr_loopbg","path":"sprites/spr_loopbg/spr_loopbg.yy",},},
     {"id":{"name":"spr_nextlevel","path":"sprites/spr_nextlevel/spr_nextlevel.yy",},},
+    {"id":{"name":"spr_placeholder_icon","path":"sprites/spr_placeholder_icon/spr_placeholder_icon.yy",},},
     {"id":{"name":"spr_play","path":"sprites/spr_play/spr_play.yy",},},
     {"id":{"name":"spr_playerhead","path":"sprites/spr_playerhead/spr_playerhead.yy",},},
     {"id":{"name":"spr_poof","path":"sprites/spr_poof/spr_poof.yy",},},
@@ -167,6 +171,8 @@
     {"roomId":{"name":"room_credits","path":"rooms/room_credits/room_credits.yy",},},
     {"roomId":{"name":"room_puzzle_1","path":"rooms/room_puzzle_1/room_puzzle_1.yy",},},
     {"roomId":{"name":"room_puzzle_2","path":"rooms/room_puzzle_2/room_puzzle_2.yy",},},
+    {"roomId":{"name":"room_puzzle_3","path":"rooms/room_puzzle_3/room_puzzle_3.yy",},},
+    {"roomId":{"name":"room_puzzle_4","path":"rooms/room_puzzle_4/room_puzzle_4.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

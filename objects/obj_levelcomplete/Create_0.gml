@@ -1,5 +1,5 @@
 leveloutro = false;
-true_alpha = 0.3
+true_alpha = 1;
 opened = true;
 
 

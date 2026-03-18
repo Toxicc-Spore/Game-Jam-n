@@ -1,7 +1,7 @@
 depth = -999;
 facing = FACING.UP;
 
-rotate = function() {
+function rotate(){
 	if (facing = FACING.UP){
 		facing = FACING.RIGHT;
 		image_angle = 270;

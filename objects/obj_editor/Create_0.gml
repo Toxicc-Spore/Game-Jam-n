@@ -43,12 +43,18 @@ if (room == room_puzzle_test1){
 
 if (room == room_puzzle_1){
 	editor_addobject(obj_flingbox, spr_box_editoricon, 3);
-	villain_taunttext1 = "Hi i can't write dialog!\n   -ralcactus lv 1";
 }
 
 if (room == room_puzzle_2){
 	editor_addobject(obj_flingbox, spr_box_editoricon, 5);
-	villain_taunttext1 = "Hi i can't write dialog!\n   -ralcactus lv 2";
+}
+
+if (room == room_puzzle_3){
+	editor_addobject(obj_flingbox, spr_box_editoricon, 2);
+}
+
+if (room == room_puzzle_4){
+	editor_addobject(obj_flingbox, spr_box_editoricon, 5);
 }
 
 if (room == room_puzzle_tutorial1){
