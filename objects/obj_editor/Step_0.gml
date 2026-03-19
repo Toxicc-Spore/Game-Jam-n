@@ -50,8 +50,14 @@ if (mouse_check_button_pressed(mb_left) && mouse_x > 1366-100 && mouse_x < 1366+
 }
 
 if (global.testing && instance_exists(obj_cat)){
-	if (obj_cat.x < 0 || obj_cat.x > room_width || obj_cat.y < 0 || obj_cat.y > room_height)
-		end_testing()
+	with obj_cat {
+		if (x < 0 || x > room_width || y < 0 || y > room_height) {
+			if instance_number(obj_cat) <= 1 {
+				other.end_testing()
+			}
+			instance_destroy()
+		}
+	}
 }
 
 
