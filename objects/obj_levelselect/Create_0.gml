@@ -3,6 +3,7 @@ icon_array = [];
 name_array = [];
 hovernumber = 0;
 linecount = 6;
+hover_tut = false;
 
 //add_level(room_puzzle_test1, spr_placeholder_icon, "Testroom");
 //add_level(room_puzzle_tutorial1, spr_placeholder_icon, "Tutorial");
@@ -33,7 +34,6 @@ add_level(room_levelselect, spr_placeholder_icon, "Level 21");
 add_level(room_levelselect, spr_placeholder_icon, "Level 22");
 add_level(room_levelselect, spr_placeholder_icon, "Level 23");
 add_level(room_levelselect, spr_placeholder_icon, "Level 24");
-add_level(room_levelselect, spr_placeholder_icon, "Level 25");
 
 function add_level(_level, icon, name){
 	array_push(room_array, _level);

@@ -18,3 +18,19 @@ for (var i = 0; i < array_length(room_array); i++)
 		}
 	}
 }
+
+var left = 100;
+var right = 100 + sprite_get_width(spr_tutorialbutton);
+var top = 30;
+var bottom = 30 + sprite_get_height(spr_tutorialbutton);
+
+if (mouse_x > left && mouse_x < right && mouse_y > top && mouse_y < bottom){
+	hover_tut = true;
+	
+	if (mouse_check_button_pressed(mb_left) && !instance_exists(obj_fadeout)){
+		audio_stop_all();
+		room_fadeto(room_puzzle_tutorial1);
+	}
+}
+else
+	hover_tut = false;

@@ -13,6 +13,9 @@ add_music(room_puzzle_4, mu_puzzle);
 add_music(room_puzzle_5, mu_puzzle);
 add_music(room_puzzle_6, mu_puzzle);
 
+//boss
+add_music(room_bossfight, mus_bossfight);
+
 function add_music(_room, music){
 	array_push(musicArray,music);
 	array_push(musicArrayRoom,_room);

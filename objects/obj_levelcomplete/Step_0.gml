@@ -20,9 +20,11 @@ if (place_meeting(x, y, obj_cat) && opened){
 	if (leveloutro)
 		exit;
 			
-	if (!audio_is_playing(sfx_levelcomplete))
+	if (!audio_is_playing(sfx_levelcomplete)){
 		audio_play_sound(sfx_levelcomplete, 1, 0);
-			
+		obj_savemanager.scr_savelevel_progress();
+	}
+
 	leveloutro = true;
 }
 
