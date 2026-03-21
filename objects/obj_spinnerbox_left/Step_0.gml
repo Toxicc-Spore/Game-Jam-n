@@ -17,7 +17,6 @@ var collided_with = instance_place(x, y, obj_cat)
 if (collided_with != noone) {
 	if !colliding_with_cat {
 		colliding_with_cat = true
-		
 		collided_with.movement_direction = facing;
 		
 		if (facing = FACING.UP) {

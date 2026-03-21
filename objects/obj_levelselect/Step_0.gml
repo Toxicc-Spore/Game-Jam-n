@@ -2,8 +2,8 @@ hovernumber = -4;
 
 for (var i = 0; i < array_length(room_array); i++)
 {
-	var xx = 100 + (i mod 4) * 100;
-	var yy = 100 + floor(i / 4) * 100;
+	var xx = 100 + (i mod linecount) * 100;
+	var yy = 100 + floor(i / linecount) * 100;
 
 	var left = xx;
 	var right = xx + sprite_get_width(icon_array[i]);

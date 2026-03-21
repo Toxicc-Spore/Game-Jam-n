@@ -1,4 +1,4 @@
-room_order = [room_puzzle_1, room_puzzle_2]
+room_order = [room_puzzle_1, room_puzzle_2, room_puzzle_3, room_puzzle_4, room_puzzle_5, room_puzzle_6]
 in_puzzle_room = false
 current_room = 0
 
