@@ -117,9 +117,6 @@ if (room == room_puzzle_tutorial2){
 	villain_taunttextlevel2_to_3 = "TRAINING COMPLETE\nGoodbye!";
 }
 
-
-
-
 function editor_addobject(object, sprite, amount){
 	array_push(ObjectArray,object);
 	array_push(ObjectSpriteArray,sprite);

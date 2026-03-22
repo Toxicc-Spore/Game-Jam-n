@@ -25,3 +25,4 @@ if (changevolume){
 }
 
 audio_master_gain(global.volume/100);
+
