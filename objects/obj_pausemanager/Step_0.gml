@@ -2,10 +2,11 @@ if (global.paused){
 	instance_deactivate_all(true);
 	instance_activate_object(obj_screen);
 	
-	if (keyboard_check(ord("Q"))){
-		global.paused = false;
-		room_fadeto(room_levelselect);
+	if (instance_exists(obj_button_exitlevel)){
+		instance_create(room_width/2-400, 200, obj_button_exitlevel);
 	}
+	
+	instance_activate_object(obj_button_exitlevel);
 }
 else
 	instance_activate_all();
