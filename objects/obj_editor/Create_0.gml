@@ -20,6 +20,7 @@ drawy = view_get_hport(view_camera[0])-60;
 VillainHeadEmote = HeadEmote.Normal;
 PlayerHeadEmote = HeadEmote.Normal;
 boxtouched_count = 0;
+voice_audio = sfx_poof;
 
 #region text
 current_villain_taunttext = "";
@@ -45,7 +46,14 @@ if (room == room_puzzle_test1){
 
 if (room == room_puzzle_1){
 	editor_addobject(obj_flingbox, spr_box_editoricon, 1);
-	villain_taunttext1 = "Agent kitty! you have no\nchance of getting this\ncat out of my lair!";
+	villain_taunttext1 = "Ah yes Agent Kitty! How\nunexpected!" +
+	"\nAnd by unexpected i mean\n...\nunexpected. " + 
+	"I just done\nmoving into this new secret\nlair. I assumed you'd be here\nlater on..." +
+	"Well no matter!\nI still have plenty of\nevil traps layed out for you!\nEven though my cat-" + 
+	"launchers\n are still in the boxes"
+	
+	textspeed = 4;
+	voice_audio = vc_level_1;
 }
 
 if (room == room_puzzle_2){
@@ -75,12 +83,12 @@ if (room == room_puzzle_6){
 }
 
 if (room == room_puzzle_7){
-	editor_addobject(obj_flingbox, spr_box_editoricon, 2);
+	editor_addobject(obj_flingbox, spr_box_editoricon, 1);
 	editor_addobject(obj_spinnerbox_left, spr_spinnerbox_right_editoricon, 2);
 }
 
 if (room == room_puzzle_8){
-	editor_addobject(obj_flingbox, spr_box_editoricon, 2);
+	editor_addobject(obj_flingbox, spr_box_editoricon, 3);
 	editor_addobject(obj_spinnerbox_right, spr_spinnerbox_right_editoricon, 1);
 }
 
@@ -97,6 +105,30 @@ if (room == room_puzzle_10){
 
 if (room == room_puzzle_11){
 	editor_addobject(obj_clonebox, spr_clonebox_editoricon, 1);
+	editor_addobject(obj_flingbox, spr_box_editoricon, 2);
+}
+
+if (room == room_puzzle_12){
+	editor_addobject(obj_clonebox, spr_clonebox_editoricon, 1);
+	editor_addobject(obj_clonebox_clone2, spr_clonebox_clone2_editoricon, 2);
+	editor_addobject(obj_flingbox, spr_box_editoricon, 2);
+	editor_addobject(obj_spinnerbox_right, spr_spinnerbox_right_editoricon, 1);
+	editor_addobject(obj_spinnerbox_left, spr_spinnerbox_left_editoricon, 1);
+}
+
+if (room == room_puzzle_13){
+	editor_addobject(obj_clonebox_clone2, spr_clonebox_clone2_editoricon, 1);
+	editor_addobject(obj_clonebox, spr_clonebox_editoricon, 1);
+	editor_addobject(obj_spinnerbox_left, spr_spinnerbox_left_editoricon, 1);
+	editor_addobject(obj_flingbox, spr_box_editoricon, 1);
+}
+
+if (room == room_puzzle_14){
+	editor_addobject(obj_spinnerbox_right, spr_spinnerbox_right_editoricon, 1);
+	editor_addobject(obj_spinnerbox_left, spr_spinnerbox_left_editoricon, 2);
+	editor_addobject(obj_clonebox, spr_clonebox_editoricon, 1);
+	editor_addobject(obj_clonebox_clone2, spr_clonebox_clone2_editoricon, 1);
+	editor_addobject(obj_flingbox, spr_box_editoricon, 4);
 }
 
 
@@ -142,4 +174,4 @@ end_testing = function() {
 }
 
 current_villain_taunttext = villain_taunttext1;
-
+audio_play_sound(voice_audio, 1, 0);

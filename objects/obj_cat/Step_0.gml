@@ -1,21 +1,30 @@
+if (!global.testing)
+	instance_destroy();
+	
 if (do_move){
 	switch (movement_direction){
 		case FACING.UP:
 			y -= movespeed;
+			image_xscale = 1;
+			image_yscale = -1;
 		break;
 		
 		case FACING.DOWN:
 			y += movespeed;
+			image_xscale = 1;
+			image_yscale = 1;
 		break;
 		
 		case FACING.LEFT:
 			x -= movespeed;
 			image_xscale = -1;
+			image_yscale = 1;
 		break;
 		
 		case FACING.RIGHT:
 			x += movespeed;
 			image_xscale = 1;
+			image_yscale = 1;
 		break;
 	}
 }
@@ -53,3 +62,9 @@ if (room == room_bossfight){
 	if (x > -pad && x < room_width+pad && y > -pad && y < room_height+pad)
 		clippedout = false;
 }
+
+if (movement_direction == FACING.UP || movement_direction == FACING.DOWN)
+	sprite_index = spr_catV;
+	
+if (movement_direction == FACING.LEFT || movement_direction == FACING.RIGHT)
+	sprite_index = spr_cat;
