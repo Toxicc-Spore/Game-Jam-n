@@ -84,7 +84,7 @@ if (room == room_puzzle_6){
 
 if (room == room_puzzle_7){
 	editor_addobject(obj_flingbox, spr_box_editoricon, 1);
-	editor_addobject(obj_spinnerbox_left, spr_spinnerbox_right_editoricon, 2);
+	editor_addobject(obj_spinnerbox_left, spr_spinnerbox_left_editoricon, 2);
 }
 
 if (room == room_puzzle_8){
