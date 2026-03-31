@@ -21,6 +21,7 @@ VillainHeadEmote = HeadEmote.Normal;
 PlayerHeadEmote = HeadEmote.Normal;
 boxtouched_count = 0;
 voice_audio = sfx_poof;
+tutoffset = 0;
 
 #region text
 current_villain_taunttext = "";
@@ -34,6 +35,10 @@ villain_taunttext100 = "";
 villain_taunttextlevel1_to_2 = "";
 villain_taunttextlevel2_to_3 = "";
 #endregion
+
+if (room == room_puzzle_tutorial1 || room == room_puzzle_tutorial2){
+	tutoffset = 75;
+}
 
 if (room == room_puzzle_test1){
 	editor_addobject(obj_flingbox, spr_box_editoricon, 5);
